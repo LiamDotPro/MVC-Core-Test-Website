@@ -13124,11 +13124,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\li\\source\\repos\\Bootstrap\\Bootstrap\\Bootstrap.csproj",
+      "projectUniqueName": "C:\\Users\\li\\Documents\\GitHub\\MVC-Core-Test-Website\\Bootstrap.csproj",
       "projectName": "Bootstrap",
-      "projectPath": "C:\\Users\\li\\source\\repos\\Bootstrap\\Bootstrap\\Bootstrap.csproj",
+      "projectPath": "C:\\Users\\li\\Documents\\GitHub\\MVC-Core-Test-Website\\Bootstrap.csproj",
       "packagesPath": "C:\\Users\\li\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\li\\source\\repos\\Bootstrap\\Bootstrap\\obj\\",
+      "outputPath": "C:\\Users\\li\\Documents\\GitHub\\MVC-Core-Test-Website\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

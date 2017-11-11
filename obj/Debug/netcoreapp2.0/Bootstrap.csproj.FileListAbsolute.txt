@@ -9,3 +9,14 @@ C:\Users\li\source\repos\Bootstrap\Bootstrap\obj\Debug\netcoreapp2.0\Bootstrap.A
 C:\Users\li\source\repos\Bootstrap\Bootstrap\obj\Debug\netcoreapp2.0\Bootstrap.AssemblyInfo.cs
 C:\Users\li\source\repos\Bootstrap\Bootstrap\obj\Debug\netcoreapp2.0\Bootstrap.dll
 C:\Users\li\source\repos\Bootstrap\Bootstrap\obj\Debug\netcoreapp2.0\Bootstrap.pdb
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\bin\Debug\netcoreapp2.0\Bootstrap.deps.json
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\bin\Debug\netcoreapp2.0\Bootstrap.runtimeconfig.json
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\bin\Debug\netcoreapp2.0\Bootstrap.runtimeconfig.dev.json
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\bin\Debug\netcoreapp2.0\Bootstrap.dll
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\bin\Debug\netcoreapp2.0\Bootstrap.pdb
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\obj\Debug\netcoreapp2.0\Bootstrap.csprojResolveAssemblyReference.cache
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\obj\Debug\netcoreapp2.0\Bootstrap.csproj.CoreCompileInputs.cache
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\obj\Debug\netcoreapp2.0\Bootstrap.AssemblyInfoInputs.cache
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\obj\Debug\netcoreapp2.0\Bootstrap.AssemblyInfo.cs
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\obj\Debug\netcoreapp2.0\Bootstrap.dll
+C:\Users\li\Documents\GitHub\MVC-Core-Test-Website\obj\Debug\netcoreapp2.0\Bootstrap.pdb
