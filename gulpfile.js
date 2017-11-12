@@ -9,7 +9,7 @@ var gulp = require('gulp');
 var gulpSass = require('gulp-sass');
 
 gulp.task('compile-sass', function () {
-    gulp.src('./wwwroot/lib/bootstrap/scss/bootstrap.scss').
+    gulp.src('./wwwroot/scss/site.scss').
         pipe(gulpSass()).
         pipe(gulp.dest('./wwwroot/css'));
 });

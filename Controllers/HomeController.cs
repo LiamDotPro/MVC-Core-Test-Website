@@ -13,10 +13,10 @@ namespace Bootstrap.Controllers
             return View();
         }
 
-        [HttpGet("{id}")]
-        public int Get(int id)
+        [HttpGet("contact")]
+        public IActionResult Contact()
         {
-            return id;
+            return View();
         }
     }
 }

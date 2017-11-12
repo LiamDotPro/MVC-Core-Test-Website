@@ -27,23 +27,21 @@ namespace Bootstrap
 
             if (env.IsDevelopment())
             {
+                // support pages to bes shown by using an explicit developer page.
                 app.UseDeveloperExceptionPage();
+            }
+            else {
+                app.UseExceptionHandler("/Error");
             }
 
             app.UseStaticFiles();
 
             /**
              * Simmilar to how router would work in vue.
-             */ 
+             */
             app.UseMvc(routes =>
-
             {
-
-                routes.MapRoute(
-
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-
+                routes.MapRoute("default", "", new { controller = "Home", Action = "Index"});
             });
         }
     }
