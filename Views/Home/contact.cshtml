@@ -1,0 +1,55 @@
+﻿@model ContactViewModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<style>
+    .col-form-label {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .emailLabel {
+        text-align: right;
+    }
+</style>
+
+<div class="container">
+    <h1>Contact Page</h1>
+    <form method="post">
+        <div class="form-group row">
+
+        </div>
+        <div class="form-group row">
+            <label asp-for="Name" class="col-sm-1 col-form-label">Name</label>
+            <div class="col-sm-3">
+                <input asp-for="Name" type="text" class="form-control" id="nameInput" placeholder="Pickle Rick">
+            </div>
+
+            <label asp-for="Email" class="col-sm-1 col-form-label emailLabel">Email</label>
+            <div class="col-sm-7 col-lg-7">
+                <input asp-for="Email" type="email" class="form-control" id="emailInput" placeholder="pickleRick@mortyAcademy.com">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Subject" class="col-sm-1 col-form-label">Subject</label>
+            <div class="col-sm-11">
+                <input asp-for="Subject" type="text" class="form-control" id="subjectInput" placeholder="Your Subject line here" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="messageInput" class="col-sm-1 col-form-label">Message</label>
+            <div class="col-sm-11">
+                <textarea asp-for="Message" id="messageInput" class="form-control" maxlength="250"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="offset-sm-1 col-sm-10">
+                <button type="submit" class="btn btn-primary">Send Email</button>
+            </div>
+        </div>
+    </form>
+</div>
