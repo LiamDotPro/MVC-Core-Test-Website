@@ -4,11 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Bootstrap.ViewModels;
+using Bootstrap.Data;
 
 namespace Bootstrap.Controllers
 {
     public class HomeController : Controller
     {
+
+        private readonly DutchContext _context;
+
+        public HomeController(DutchContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -29,6 +38,12 @@ namespace Bootstrap.Controllers
         public IActionResult Contact(ContactViewModel model)
         {
             return View();
+        }
+
+        public IActionResult Shop()
+        {
+            var results = _context.Products.OrderBy(p => p.Category).ToList();
+            return View(results.ToList());
         }
     }
 }
