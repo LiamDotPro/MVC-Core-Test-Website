@@ -31,6 +31,7 @@ namespace Bootstrap
             {
                 cfg.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
             });
+            services.AddTransient<DutchSeeder>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +59,14 @@ namespace Bootstrap
             {
                 routes.MapRoute("default", "", new { controller = "Home", Action = "Index" });
             });
+
+            if (env.IsDevelopment()) {
+                // seed the database.
+                using (var scope = app.ApplicationServices.CreateScope()) {
+                    var seeder = scope.ServiceProvider.GetService<DutchSeeder>();
+                    seeder.Seed();
+                }
+            }
         }
     }
 }
