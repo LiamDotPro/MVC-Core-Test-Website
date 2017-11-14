@@ -1,4 +1,4 @@
-﻿using DutchTreat.Data.Entities;
+﻿using Bootstrap.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace Bootstrap.Data
 
         }
 
-        public DbSet<Product> MyProperty { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
     }
 }

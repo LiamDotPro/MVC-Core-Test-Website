@@ -1,7 +1,18 @@
 ﻿@model IEnumerable<Product>
 
-<h1>Shop</h1>
-<p>Count: @model.Count()</p>
-@foreach(var p in model){
-    <li>@p.</li>
-    }
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <h1>Shop</h1>
+            <p>Count: @Model.Count()</p>
+            <ul>
+                @foreach (var p in Model)
+                {
+                    <li>@p.Title</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
