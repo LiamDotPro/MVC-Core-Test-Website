@@ -32,6 +32,7 @@ namespace Bootstrap
                 cfg.UseSqlServer(_config.GetConnectionString("DefaultConnection"));
             });
             services.AddTransient<DutchSeeder>();
+            services.AddScoped<IDutchRepository, DutchRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

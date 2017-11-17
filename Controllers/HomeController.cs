@@ -10,12 +10,11 @@ namespace Bootstrap.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IDutchRepository _repository;
 
-        private readonly DutchContext _context;
-
-        public HomeController(DutchContext context)
+        public HomeController(IDutchRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
         public IActionResult Index()
@@ -44,8 +43,8 @@ namespace Bootstrap.Controllers
         public IActionResult Shop()
         {
             // Pulls the results out from the entitiy framework.
-            var results = _context.Products.OrderBy(p => p.Category).ToList();
-            return View(results.ToList());
+            var results = _repository.GetAllProducts();
+            return View(results);
         }
     }
 }
