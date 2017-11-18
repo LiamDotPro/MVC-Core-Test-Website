@@ -2,17 +2,37 @@
 
 
 <div class="container">
-    <div class="row">
-        <div class="col-lg">
+    <div class="row fa-align-center">
+        <div class="col-lg-12">
             <h1>Shop</h1>
             <p>Count: @Model.Count()</p>
-            <ul>
-                @foreach (var p in Model)
-                {
-                    <li>@p.Title</li>
-                }
-            </ul>
         </div>
+    </div>
+    <div class="row">
+        @foreach (var p in Model)
+            {
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="~/img/@(p.ArtId).jpg" class="img-fluid" alt="@p.Title"/>
+                    <h3> @p.Category - @p.Size</h3>
+                    <ul class="product-props">
+                        <li>
+                            Price: @p.Price
+                        </li>
+                        <li>
+                            Artist: @p.Artist
+                        </li>
+                        <li>
+                            Title: @p.Title
+                        </li>
+                        <li>
+                            Description: @p.ArtDescription
+                        </li>
+                    </ul>
+                    <button class="btn btn-default">Buy</button>
+                </div>
+            </div>
+        }
     </div>
 </div>
 
