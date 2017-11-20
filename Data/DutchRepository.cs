@@ -15,6 +15,11 @@ namespace Bootstrap.Data
             _ctx = ctx;
         }
 
+        public IEnumerable<Order> getAllOrders()
+        {
+            return _ctx.Orders.ToList();
+        }
+
         /// <summary>
         /// Gets a list of all products that are avalible from the database.
         /// </summary>
@@ -36,8 +41,9 @@ namespace Bootstrap.Data
 
         /**
          * The SaveChanges method saves all of the changes that have been made to the context to the underlying database.
-         */ 
-        public bool SaveAll() {
+         */
+        public bool SaveAll()
+        {
             return _ctx.SaveChanges() > 0;
         }
     }

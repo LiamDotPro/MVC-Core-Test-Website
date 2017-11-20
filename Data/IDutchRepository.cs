@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Bootstrap.Data.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Bootstrap.Data
 {
@@ -7,5 +8,6 @@ namespace Bootstrap.Data
     {
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetProductsByCategory(string category);
+        IEnumerable<Order> getAllOrders();
     }
 }
